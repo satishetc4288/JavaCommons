@@ -1,33 +1,65 @@
 package com.satish.exp;
 
-public class Test implements Comparable<Test>{
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-    public Integer age;
+class LinkedList {
+    Node head;
+    int size;
 
-    public Test(Integer age) {
-        this.age = age;
+    public LinkedList(int item) {
+        head = new Node(item);
     }
 
-    public static void main(String[] args) {
-        Test test1 = new Test(12);
-        Test test2 = new Test(12);
-        System.out.println(test1.equals(test2));
+    //Your code starts here
 
+    public void prepend(int item) {
+        Node newNode = new Node(item);
+        newNode.setNext(head);
+        head = newNode;
+        size++;
     }
 
-    @Override
-    public int compareTo(Test o) {
-        if(this.age == o.age){
-            return 0;
-        }else if(this.age > o.age){
-            return 1;
-        }else{
-            return -1;        }
+    public int length() {
+        return size;
     }
 
-    @Override
-    public boolean equals(Object obj) {
+    //Your code ends here
+}
 
-        return (this.age.equals(((Test)obj).age));
+class Node {
+
+    int value;
+    Node next;
+
+    public Node(int item) {
+        value = item;
+    }
+
+    public void setNext(Node next){
+        this.next = next;
+    }
+}
+
+public class Test {
+    public static void main(String[] args) throws java.lang.Exception {
+
+        for(int i=1; i<101; i++){
+
+            if(i%3== 0  && i%7== 0){
+                System.out.println("HappyDays");
+                continue;
+            }
+            if(i%3== 0){
+                System.out.println("Happy");
+                continue;
+            }
+
+            if(i%7== 0){
+                System.out.println("Days");
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 }
