@@ -1,4 +1,4 @@
-package com.satish.exp.ds;
+package com.satish.exp.commons;
 
 public class TheStack<T> {
 
