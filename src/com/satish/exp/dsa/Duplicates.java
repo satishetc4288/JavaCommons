@@ -4,32 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Duplicates {
-    public static List<Integer> findDuplicates(int[] arr)
+    public static void findDuplicates(int[] arr)
     {
-        List<Integer> duplicates = new ArrayList<>();
-        int n = arr.length;
-
-        for (int i = 0; i < n; i++) {
-            int index = arr[i] % n;
-            arr[index] += n;
+        int len = arr.length;
+        for(int i=0; i<len; i++){
+           int data = arr[i] % len;
+           //System.out.println("data: " + data);
+           arr[data] += len;
         }
 
-        for (int i = 0; i < n; i++) {
-            if (arr[i] / n >= 2) {
-                duplicates.add(i);
+        for (int j =0; j<len; j++){
+            if(arr[j]/len >=2){
+                System.out.println(j);
             }
         }
-        return duplicates;
     }
 
     public static void main(String[] args)
     {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 6 };
-
-        System.out.println("The repeating elements are: ");
-        List<Integer> ans = findDuplicates(arr);
-        for (int x : ans) {
-            System.out.print(x + " ");
-        }
+        int[] arr = { 4, 2, 3, 1, 4, 6, 5 };
+        findDuplicates(arr);
     }
 }

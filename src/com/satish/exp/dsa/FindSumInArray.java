@@ -34,6 +34,9 @@ public class FindSumInArray {
                 r--;
             }
         }
+    }
+
+    public static void main3(int[] arr, int search) {
 
     }
 }
