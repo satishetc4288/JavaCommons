@@ -1,4 +1,4 @@
-package com.satish.exp.streams;
+package com.satish.exp.java8.streams;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -61,7 +61,7 @@ public class BasicStreamFunctions {
 
         //How do you merge two unsorted arrays into single sorted array without duplicates?
         Runnable sortMix = () -> {
-            Arrays.asList(1,3,5,2,4,7).addAll(Arrays.asList(6,3,1,8,2,9))
+            Arrays.asList(1,3,5,2,4,7).addAll(Arrays.asList(6,3,1,8,2,9));
         }; sortMix.run();
     }
 
