@@ -1,4 +1,4 @@
-package com.satish.exp.java8features;
+package com.satish.exp.jdk.jdk8;
 
 /*A interface which has just one abstract method is known as functional intefarce*/
 

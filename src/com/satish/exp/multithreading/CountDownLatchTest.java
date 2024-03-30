@@ -1,4 +1,4 @@
-package com.satish.exp.thread;
+package com.satish.exp.multithreading;
 
 import java.time.Instant;
 import java.util.concurrent.CountDownLatch;

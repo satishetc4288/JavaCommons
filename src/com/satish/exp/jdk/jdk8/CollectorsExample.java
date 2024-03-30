@@ -1,4 +1,4 @@
-package com.satish.exp.java8features;
+package com.satish.exp.jdk.jdk8;
 
 
 class Data implements Comparable<Data>{

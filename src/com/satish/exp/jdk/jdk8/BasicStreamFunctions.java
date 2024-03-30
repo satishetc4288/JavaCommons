@@ -1,4 +1,4 @@
-package com.satish.exp.java8.streams;
+package com.satish.exp.jdk.jdk8;
 
 import java.util.*;
 import java.util.stream.Collectors;

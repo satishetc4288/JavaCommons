@@ -1,4 +1,4 @@
-package com.satish.exp.commons;
+package com.satish.exp.dsa;
 
 import java.io.BufferedReader;
 import java.io.IOException;

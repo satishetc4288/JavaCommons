@@ -1,4 +1,4 @@
-package com.satish.exp.commons;
+package com.satish.exp.dsa;
 
 public class Fibonnaci {
 

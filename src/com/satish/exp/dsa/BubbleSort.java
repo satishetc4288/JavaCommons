@@ -1,4 +1,4 @@
-package com.satish.exp.sorting;
+package com.satish.exp.dsa;
 
 import java.util.Arrays;
 

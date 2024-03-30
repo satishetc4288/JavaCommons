@@ -1,17 +1,18 @@
-package com.satish.exp.java8features;
+package com.satish.exp.jdk.jdk8;
 
 public class ProducerConsumer {
     public static void main(String[] args) throws InterruptedException {
         Q q = new Q();
-        Thread t = new Thread(new Producer(q));
+        Thread t1 = new Thread(new Producer(q));
         Thread t2 = new Thread(new Consumar(q));
-        t.start();
+        t1.start();
         t2.start();
-        t.join();
+        t1.join();
         t2.join();
     }
 }
 class Q {
+    private int value;
     public synchronized void getValue() throws InterruptedException{
         while(value == 0) {
             wait();
@@ -30,8 +31,6 @@ class Q {
         notify();
         Thread.sleep(1000);
     }
-
-    private int value;
 }
 
 class Producer implements Runnable{

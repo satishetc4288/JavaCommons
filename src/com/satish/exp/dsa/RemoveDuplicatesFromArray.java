@@ -1,4 +1,4 @@
-package com.satish.exp.commons;
+package com.satish.exp.dsa;
 
 
 /*can not use java collections*/

@@ -1,7 +1,6 @@
-package com.satish.exp.java8.streams;
+package com.satish.exp.jdk.jdk8;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.stream.Collectors;
 
