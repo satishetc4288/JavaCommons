@@ -1,11 +1,9 @@
 package com.satish.exp.dsa;
 
-import lombok.Data;
 
 public class BinaryTree {
     private Node root;
 
-    @Data
     public static class Node {
         private int data;
         private Node left, right;
